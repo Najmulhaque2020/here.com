@@ -1,0 +1,162 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body {
+    font-family: FiraGO,Tahoma,Calibri,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .5px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #3f454d;
+}
+/* ------------- Typography ------------ */
+li {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.btn {
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+.primary-btn {
+    background: radial-gradient(circle at 100% 50%,#85e0ce,#e7e1a0);
+    border: none;
+    outline: none;
+    padding: 4px 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.submit-outline {
+    border: 2px solid #85e0ce;
+    outline: none;
+    padding: 4px 30px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.submit-outline:hover {
+    border-color: transparent;
+    background: radial-gradient(circle at 100% 50%,#85e0ce,#e7e1a0);
+    color: #000 !important;
+}
+.btn-learg {
+    padding: 10px 40px;
+}
+.primary-btn:hover {
+    background: #85e0ce;
+}
+.nav-link {
+    color: #3f454d !important;
+}
+.nav-link:hover {
+    color: #000 !important;
+    font-weight: 500;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 3px 4px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+/* ------------- Navigation ------------ */
+.dropdown-menu {
+    margin-top: 30px;
+    border-top: 3px solid #85e0ce;
+    position: relative;
+}
+.dropdown-menu:after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -9px;
+    right: 45%;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+
+    border-bottom: 7px solid #85e0ce;
+}
+/* ------------- Banner Section ------------ */
+#banner_section {
+    background-image: url(img/hero_trial_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+}
+#banner_section::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle at 100% 50%,#85e0ce,#e7e1a0);
+}
+#banner_section::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    background: radial-gradient(circle at 100% 50%,#85e0ce,#e7e1a0);
+}
+#banner_section h4 span {
+    display: block;
+}
+/* ------------- Post Section ------------ */
+#post_section .col-md-6 {
+    padding: 0;
+}
+#post_section .col-md-6 .post_content p{
+    width: 50%;
+}
+/* ------------- build_developers Section ------------ */
+#unlock_power a.outline-primary{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #000;
+    border: 3px solid #85e0ce;
+    text-align: center;
+    padding: 5px;
+}
+/* ------------- Form Section ------------ */
+#form_section {
+     background: #1b222c;
+    color: #fff;
+ }
+
+
+footer {
+     background-color: #3f454d;
+     color: #fff;
+}
+footer a {
+    color: #fff !important;
+}
+footer .footer_menu li a{
+    padding: 10px;
+    font-size: 30px;
+    line-height: 30px;
+}
+footer .footer_menu li:first-child a{
+    font-size: 16px;
+}
